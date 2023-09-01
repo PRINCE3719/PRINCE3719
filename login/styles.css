@@ -1,0 +1,92 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+    background-position: center;
+    min-height: 100vh;
+    background: url('night.jpg') no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    
+}
+.login-box{
+   height: 60vh;
+   width: 30vw;
+   color: white;
+   background:transparent;
+   backdrop-filter: blur(15px);
+   border-radius: 10px;
+   box-shadow: rgba(255, 255, 255, 0.24) 1px 1px 1px 0px;
+
+}
+.login-box h1{
+    text-align: center;
+   
+}
+.check span{
+    font-size: 14px;
+    opacity: .9;
+}
+.check{
+    margin:14px 40px;
+}
+.button{
+    margin: 14px 40px;
+}
+button{
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 25px;
+    border: 0;
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 14px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+#forgot{
+    margin-left: 7vw;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 auto;
+    width: 80%;
+}
+input[type='text'],input[type='password']{
+    outline: none;
+    background: transparent;
+    border: 0;
+    border:1px solid rgba(255,255,255,0.5);
+    padding: 15px 0px;
+    color: white;
+    border-radius: 25px;
+    padding-left: 1vw;
+}
+
+::placeholder{
+    color: white;
+    opacity: 0.4;
+}
+@media screen and (max-width: 768px) {
+    .login-box {
+        width: 50vw;
+    }
+
+    .check,
+    .button {
+        margin: 10px 20px;
+    }
+
+    #forgot {
+        margin-left: 3vw;
+    }
+
+    .input-field {
+        gap: 15px;
+    }
+}
